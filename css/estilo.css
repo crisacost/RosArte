@@ -1,0 +1,511 @@
+/*.........Reseteo.........*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*..........Header..........*/
+.imgprincipal {
+    width: 100%;
+    height: 400px;
+}
+
+.menu {
+    background-color: black;
+    padding: 10px;
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li a {
+    padding: 6px;
+    margin: 10px;
+    color: rgb(245, 243, 241);
+    text-decoration: none;
+
+
+}
+
+/*..........Index..........*/
+main {
+    min-height: 80vh;
+    display: grid;
+}
+
+body {
+    background-color: rgb(253, 251, 251);
+    color: black;
+
+}
+
+h1 {
+    padding: 10px;
+    color: rgb(253, 252, 251);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+h2 {
+    margin: 15px;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.presentacion {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    /*...DESDE ACA GRID...*/
+    display: grid;
+    width: 100%;
+    grid-row: auto auto;
+    grid-column: 1fr 1fr 1fr;
+    grid-template-areas:
+        "cont1 imgc1 imgc2"
+        "cont2 imgc3 imgc3"
+
+}
+
+.cont1 {
+    grid-area: cont1;
+
+
+}
+
+.cont2 {
+    grid-area: cont2;
+
+
+}
+
+.imgc1 {
+    grid-area: imgc1;
+}
+
+.imgc2 {
+    grid-area: imgc2;
+
+}
+
+.imgc3 {
+    grid-area: imgc3;
+    display: flex;
+    justify-content: center;
+}
+
+.pfinal {
+    text-decoration: underline;
+
+}
+
+/*..........Footer..........*/
+.foot1 {
+    background-color: rgb(28, 58, 58);
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+
+}
+
+.foot2 {
+    background-color: rgb(23, 41, 41);
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+/*..........Quehacer..........*/
+h4 {
+    padding: 10px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.titulocuatro {
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*...MUSEOS...*/
+.museo {
+    background-color: rgb(8, 8, 8);
+    color: rgb(253, 251, 251);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*...EMPIEZA GRID...*/
+    display: grid;
+    width: 100%;
+    grid-row: auto auto auto auto;
+    grid-column: 1fr 1fr;
+    grid-template-areas:
+        "titulom imgm-1"
+        "titulom imgm-2"
+        "titulom imgm-3"
+        "pfinm pfinm"
+
+}
+
+.titulom {
+    grid-area: titulom;
+    height: 100%;
+    /*...COMBINACION GRID Y FLEX...*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+
+
+}
+
+.imgm-1 {
+    padding: 15px;
+    border-top: groove;
+    border-right: groove;
+    grid-area: imgm-1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.imgm-2 {
+    padding: 15px;
+    border-left: groove;
+    border-bottom: groove;
+    grid-area: imgm-2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgm-3 {
+    padding: 15px;
+    border-top: groove;
+    border-bottom: groove;
+    grid-area: imgm-3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pfinm {
+    grid-area: pfinm;
+    display: flex;
+    justify-content: center;
+}
+
+.ms1 {
+    margin: 20px;
+}
+
+.muspar {
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: normal;
+
+
+
+}
+
+/*...PARQUES...*/
+.parques {
+    background-color: rgb(8, 8, 8);
+    color: rgb(253, 251, 251);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*...EMPIEZA GRID...*/
+    display: grid;
+    width: 100%;
+    grid-row: auto auto auto auto;
+    grid-column: 1fr 1fr;
+    grid-template-areas:
+        "titulop imgp-1"
+        "titulop imgp-2"
+        "titulop imgp-3"
+        "pfinp pfinp"
+}
+
+.titulop {
+    grid-area: titulop;
+    height: 100%;
+    /*...COMBINACION GRID Y FLEX...*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+
+
+}
+
+.imgp-1 {
+    padding: 15px;
+    border-top: groove;
+    border-right: groove;
+    grid-area: imgp-1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.imgp-2 {
+    padding: 15px;
+    border-left: groove;
+    border-bottom: groove;
+    grid-area: imgp-2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgp-3 {
+    padding: 15px;
+    border-top: groove;
+    border-bottom: groove;
+    grid-area: imgp-3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pfinp {
+    grid-area: pfinp;
+    display: flex;
+    justify-content: center;
+}
+
+.pr1 {
+    margin: 20px;
+}
+
+.parqpar {
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+/*..........Recorridos..........*/
+h5 {
+    color: rgb(7, 6, 6);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 8px;
+    padding: 10px;
+
+}
+
+.ptod {
+    background-color: rgb(8, 8, 8);
+    color: rgb(253, 251, 251);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.rec1 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+    text-decoration: underline;
+
+}
+
+.rec11 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px;
+
+}
+
+.imgrec {
+    margin: 25px;
+}
+
+/*..........Contacto..........*/
+h6 {
+    color: rgb(7, 6, 6);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.lrm {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.formu {
+    margin: 20px;
+    background-color: rgb(247, 238, 238);
+    padding: 10px;
+}
+
+/*..........Informacion..........*/
+.titu {
+    color: rgb(7, 6, 6);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tdo1 {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+.tit {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+
+}
+
+.rell {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.tdo2 {
+    background-color: rgba(29, 29, 49, 0.87);
+    margin: 0;
+    padding: 10px;
+}
+
+.tdo3 {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+.rell1 {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.tit1 {
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+}
+
+/*..........MEDIA QUERY..........*/
+@media screen and (max-width: 950px) {
+    .imgprincipal {
+        display: none;
+    }
+
+    .presentacion {
+        grid-row: auto auto auto auto;
+        grid-column: 1fr 1fr;
+        grid-template-areas:
+            "cont1 cont1"
+            "cont2 cont2"
+            "imgc1 imgc2"
+            "imgc3 imgc3"
+    }
+
+    .parques {
+        grid-row: auto auto auto auto auto;
+        grid-column: 1fr;
+        grid-template-areas:
+            "titulop" 
+            "imgp-1"
+            " imgp-2"
+            " imgp-3"
+            "pfinp"
+    }
+
+    .encabezado {
+        display: none
+    }
+
+    .museo {
+        grid-row: auto auto auto auto auto;
+        grid-column: 1fr;
+        grid-template-areas:
+            "titulom"
+            "imgm-1"
+            "imgm-2"
+            "imgm-3"
+            "pfinm"
+    }
+
+
+}
+
+@media screen and (max-width: 560px) {
+    .menu {
+        background-color: white;
+        padding: 5px;
+        list-style: none;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+    }
+
+    .menu li a {
+        color: black;
+
+    }
+
+    .foot1 {
+        background-color: white;
+
+    }
+
+    .foot2 {
+        background-color: white;
+    }
+
+}
